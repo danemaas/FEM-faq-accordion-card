@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <!--======== MY CODE ========-->
+    <main class="container">
+      <section class="card position-relative p-2">
+        <div class="main-image position-absolute"></div>
+        <div class="sub-image position-absolute"></div>
+        <div class="card-text align-self-md-end p-md-5">
+          <h1 class="card-title text-center fw-bold text-md-start ps-md-3">
+            FAQ
+          </h1>
+
+          <div
+            class="accordion accordion-flush pb-5"
+            id="accordion-wrapper"
+            style="padding-inline: 1rem"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-one">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-one"
+                  aria-expanded="false"
+                  aria-controls="collapse-one"
+                >
+                  How many team members can I invite?
+                </button>
+              </h2>
+              <div
+                id="collapse-one"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-one"
+                data-bs-parent="#accordion-wrapper"
+              >
+                <div class="accordion-body">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-two">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-two"
+                  aria-expanded="false"
+                  aria-controls="collapse-two"
+                >
+                  What is the maximum file upload size?
+                </button>
+              </h2>
+              <div
+                id="collapse-two"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-two"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-three">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-three"
+                  aria-expanded="false"
+                  aria-controls="collapse-three"
+                >
+                  How do I reset my password?
+                </button>
+              </h2>
+              <div
+                id="collapse-three"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-three"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-four">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-four"
+                  aria-expanded="false"
+                  aria-controls="collapse-four"
+                >
+                  Can I cancel my subscription?
+                </button>
+              </h2>
+              <div
+                id="collapse-four"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-four"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-five">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-five"
+                  aria-expanded="false"
+                  aria-controls="collapse-five"
+                >
+                  Do you provide additional support?
+                </button>
+              </h2>
+              <div
+                id="collapse-five"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-five"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--======== END OF MY CODE ========-->
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/danemaas">Daniel</a>.
+    </footer>
+  </body>
+
+  <!-- BOOTSTRAP JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,0 +1,145 @@
+/*========= GOOGLE FONTS =========*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*========= VARIABLES =========*/
+:root {
+    --mobile: 375px;
+    --desktop: 1440px;
+
+    /* Text color */
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Background gradient */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* Dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+/*========= BASE =========*/
+body {
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+}
+
+/*========= MAIN CLASSES =========*/
+.container {
+    width: calc(var(--mobile) + 2rem) ;
+    margin: 10rem auto;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.main-image {
+    background-image: url(images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    top: -7rem;
+    left: 4rem;
+}
+
+.sub-image {
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    left: 4rem;
+}
+
+.card-text {
+    padding-top: 9rem;
+}
+
+/*========= CLASSES from BOOTSTRAP ACCORDION MODIFIED =========*/
+.accordion-button {
+    font-size: 14px;
+    padding-inline: 0;
+}
+
+.accordion-body {
+    color: var(--dark-grayish-blue);
+    padding-inline: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    font-weight: bold;
+}
+
+.accordion-button:is(.collapsed) {
+    color: var(--very-dark-desaturated-blue);
+}
+
+.accordion-button:is(.collapsed):hover {
+    color: var(--soft-red);
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: transparent;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(images/icon-arrow-down.svg);
+    background-size: .75rem;
+}
+
+.accordion-button::after {
+    background-image: url(images/icon-arrow-down.svg);
+    background-size: .75rem;
+}
+
+.accordion-flush .accordion-item:last-child {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/*========= MEDIA QUERIES =========*/
+@media screen and (min-width: 768px) {
+    .container {
+        width: 1024px;
+    }
+
+    .card-text {
+        width: 564px;
+    }
+
+    .main-image {
+        background-image: url(images/illustration-woman-online-desktop.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        top: 2rem;
+        left: -7rem;
+    }
+
+    .main-image::after {
+        background-image: url(images/illustration-box-desktop.svg);
+    }
+    
+    .sub-image {
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 250%;
+        top: -20rem;
+        left: -37rem;
+    }
+}
+
+/*========= FEM CLASS =========*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
